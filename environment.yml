@@ -1,0 +1,22 @@
+# Anaconda shell: `conda env create -f environment.yml`
+name: ml-based-classification-of-states-in-lpwan-current-consumption-curves
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.9.*
+  # Unit tests
+  - autopep8
+  - pep8-naming
+  - pylint
+  - pytest
+  - pytest-flake8  # Might cause errors in CI -> check CI pipeline and change `.gitlab-ci.yml
+  - pytest-flakes
+  - pytest-pycodestyle
+  - pytest-pylint
+  - pytest-cache
+  - pytest-cov
+  # Project
+  - param

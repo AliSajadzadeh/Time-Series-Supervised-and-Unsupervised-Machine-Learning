@@ -53,27 +53,20 @@ The implemented algorithms aim to classify time series data into predefined clas
     Evaluate the trained models on test data to assess their classification accuracy.
     Analyze the results and refine the models as necessary to improve performance.
 
+- **Dependencies:**
 
+    Python 3.x
+  
+    TensorFlow
+  
+    Keras
+  
+    tsfresh
+  
+    NumPy
+  
+    Pandas
+  
+    scikit-learn
 
-
-
-
-
-
-    
-
-## Implemented Deep Learning Layers
-This project includes the following deep learning layers:
-- **Dense Layer:** Fully connected layer with customizable activation function.
-- **Convolutional Layer:** Convolutional layer with customizable kernel size, padding, and stride.
-- **Pooling Layer:** Pooling operations such as max pooling or average pooling.
-- **Activation Layer:** Various activation functions such as ReLU, sigmoid, or tanh.
-- **Optimization Algorithms:** SGD and ADAM algorithms
-- **Loss Functions:** CrossEntropyLoss function.
-
-## Testing
-For all implemented layers and functions, unit tests have been written to verify the performance of each component. These tests cover various states and situations to ensure the robustness and correctness of the deep learning functionalities. Prior to using the implemented layers in your projects, it is essential to run these unit tests to validate their behavior.
-
-## Conclusion
-Deep learning has often been referred to as a "black box" due to the lack of transparency or interpretability in the internal workings of it. However, through the process of implementing deep learning layers from scratch in this project, we've gained invaluable insights that have illuminated many aspects of how deep learning works.This hands-on approach has allowed us to see beyond the abstraction provided by high-level deep learning frameworks and comprehend the mechanics at play.
 

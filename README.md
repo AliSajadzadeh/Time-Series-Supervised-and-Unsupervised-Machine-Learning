@@ -1,4 +1,4 @@
-# Deep Learning Layers Implementation
+# Time Series Supervised Classification Algorithms
 
 
 ## Abstract

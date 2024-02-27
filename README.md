@@ -1,4 +1,4 @@
-#Time Series Supervised Classification Algorithms
+# Time Series Supervised Classification Algorithms
 
 This project implements two univariate time series supervised classification algorithms using Python.
 Overview

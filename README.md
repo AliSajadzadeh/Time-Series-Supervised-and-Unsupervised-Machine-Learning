@@ -36,20 +36,20 @@ The implemented algorithms aim to classify time series data into predefined clas
 
 ## Usage
 
-  - Installation:
+  - **Installation:**
     Clone the repository to your local machine.
     Install the required dependencies using pip install -r requirements.txt.
 
-- Data Preparation:
+- **Data Preparation:**
   Prepare your time series data in a suitable format.
   Ensure that the data is labeled with the corresponding class labels.
 
-  - Training and Testing:
+- **Training and Testing:**
     Choose the desired classification approach (Deep learning model or feature extraction with tsfresh).
     Follow the provided scripts or notebooks to preprocess the data, train the model, and evaluate its performance.
     Adjust hyperparameters and model architectures as needed to optimize performance.
 
-  - Evaluation:
+- **Evaluation:**
     Evaluate the trained models on test data to assess their classification accuracy.
     Analyze the results and refine the models as necessary to improve performance.
 

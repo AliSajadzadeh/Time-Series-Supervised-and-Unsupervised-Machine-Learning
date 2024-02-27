@@ -1,60 +1,30 @@
-# Time Series Supervised Classification Algorithms
+# Deep Learning Layers Implementation
 
-This project implements two univariate time series supervised classification algorithms using Python.
-Overview
 
-The implemented algorithms aim to classify time series data into predefined classes using supervised learning techniques. The project consists of two main approaches
+## Abstract
+This project was created as a python programming part of a deep learning course at the Pattern Recognition Lab of Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU).
+Throughout the course, I gained a comprehensive understanding of various aspects related to deep learning, including different layers, optimization techniques,
+loss functions, regularization techniques, and time sequential algorithms such as Recurrent Neural Networks (RNN) and Long Short-Term Memory (LSTM).
+Additionally, advanced object detection algorithms like Fast R-CNN and segmentation methods were explored, providing a holistic view of deep learning concepts and applications.
 
-## Deep Learning Model with 1-D Convolution
-        In this approach, the time series data is windowed into fixed-size segments.
-        Each window is then fed into a deep learning model with 1-D convolution layers for training and testing.
-        The model learns to classify each window into predefined classes based on the features extracted from the time series data.
 
-## Feature Extraction with tsfresh and SelectKbest
-        This approach involves splitting the time series data into fixed-size windows.
-        Features are extracted from each window using the tsfresh feature extraction package.
-        The SelectKbest feature selection algorithm is applied to identify the optimal subset of features that minimize validation loss.
-        During the testing phase, the selected features are extracted from the test data and used to predict the class labels using a trained model.
+## Objective
+The objective of the project is to gain a comprehensive understanding of deep learning layers and their functionality by implementing them from scratch. 
+This hands-on approach helps us reinforce our understanding of the concepts learned in the deep learning course.
 
-Implementation Details
 
-    Deep Learning Model
-        Implemented using TensorFlow and Keras.
-        Architecture includes 1-D convolutional layers followed by dense layers for classification.
-        Data preprocessing involves windowing the time series data into segments of fixed size.
-        Model training is performed using labeled data, and testing evaluates the model's performance on unseen data.
+## Implemented Deep Learning Layers
+This project includes the following deep learning layers:
+- **Dense Layer:** Fully connected layer with customizable activation function.
+- **Convolutional Layer:** Convolutional layer with customizable kernel size, padding, and stride.
+- **Pooling Layer:** Pooling operations such as max pooling or average pooling.
+- **Activation Layer:** Various activation functions such as ReLU, sigmoid, or tanh.
+- **Optimization Algorithms:** SGD and ADAM algorithms
+- **Loss Functions:** CrossEntropyLoss function.
 
-    Feature Extraction with tsfresh
-        Utilizes the tsfresh package for automated feature extraction from time series data.
-        Features are extracted from each windowed segment of the time series.
-        SelectKbest feature selection algorithm is applied to select the most relevant features based on validation performance.
+## Testing
+For all implemented layers and functions, unit tests have been written to verify the performance of each component. These tests cover various states and situations to ensure the robustness and correctness of the deep learning functionalities. Prior to using the implemented layers in your projects, it is essential to run these unit tests to validate their behavior.
 
-Usage
-
-    Installation
-        Clone the repository to your local machine.
-        Install the required dependencies using pip install -r requirements.txt.
-
-    Data Preparation
-        Prepare your time series data in a suitable format.
-        Ensure that the data is labeled with the corresponding class labels.
-
-    Training and Testing
-        Choose the desired classification approach (Deep Learning Model or Feature Extraction with tsfresh).
-        Follow the provided scripts or notebooks to preprocess the data, train the model, and evaluate its performance.
-        Adjust hyperparameters and model architectures as needed to optimize performance.
-
-    Evaluation:
-        Evaluate the trained models on test data to assess their classification accuracy.
-        Analyze the results and refine the models as necessary to improve performance.
-
-Dependencies
-
-    Python 3.x
-    TensorFlow
-    Keras
-    tsfresh
-    NumPy
-    Pandas
-    scikit-learn
+## Conclusion
+Deep learning has often been referred to as a "black box" due to the lack of transparency or interpretability in the internal workings of it. However, through the process of implementing deep learning layers from scratch in this project, we've gained invaluable insights that have illuminated many aspects of how deep learning works.This hands-on approach has allowed us to see beyond the abstraction provided by high-level deep learning frameworks and comprehend the mechanics at play.
 

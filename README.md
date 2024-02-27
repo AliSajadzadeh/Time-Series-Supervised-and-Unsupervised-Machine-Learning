@@ -8,9 +8,9 @@ The implemented algorithms aim to classify time series data into predefined clas
 
 - **Deep Learning Model with 1-D Convolution**:
 
-        In this approach, the time series data is windowed into fixed-size segments.
-        Each window is then fed into a deep learning model with 1-D convolution layers for training and testing.
-        The model learns to classify each window into predefined classes based on the features extracted from the time series data.
+  In this approach, the time series data is windowed into fixed-size segments.
+  Each window is then fed into a deep learning model with 1-D convolution layers for training and testing.
+  The model learns to classify each window into predefined classes based on the features extracted from the time series data.
 
 - **Feature Extraction with tsfresh and SelectKbest**:
   

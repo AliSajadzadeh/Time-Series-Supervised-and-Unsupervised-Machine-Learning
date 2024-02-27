@@ -1,12 +1,21 @@
-# Time Series Supervised Classification Algorithms
+# Time Series Supervised Machine Learning Algorithms
 
+This project implements two univariate time series classification algorithms using Python.
 
-## Abstract
-This project was created as a python programming part of a deep learning course at the Pattern Recognition Lab of Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU).
-Throughout the course, I gained a comprehensive understanding of various aspects related to deep learning, including different layers, optimization techniques,
-loss functions, regularization techniques, and time sequential algorithms such as Recurrent Neural Networks (RNN) and Long Short-Term Memory (LSTM).
-Additionally, advanced object detection algorithms like Fast R-CNN and segmentation methods were explored, providing a holistic view of deep learning concepts and applications.
+## Overview
 
+The implemented algorithms aim to classify time series data into predefined classes using supervised learning techniques. The project consists of two main approaches:
+
+    1 - Deep Learning Model with 1-D Convolution
+        In this approach, the time series data is windowed into fixed-size segments.
+        Each window is then fed into a deep learning model with 1-D convolution layers for training and testing.
+        The model learns to classify each window into predefined classes based on the features extracted from the time series data.
+
+    2 - Feature Extraction with tsfresh and SelectKbest
+        This approach involves splitting the time series data into fixed-size windows.
+        Features are extracted from each window using the tsfresh feature extraction package.
+        The SelectKbest feature selection algorithm is applied to identify the optimal subset of features that minimize validation loss.
+        During the testing phase, the selected features are extracted from the test data and used to predict the class labels using a trained model.
 
 ## Objective
 The objective of the project is to gain a comprehensive understanding of deep learning layers and their functionality by implementing them from scratch. 

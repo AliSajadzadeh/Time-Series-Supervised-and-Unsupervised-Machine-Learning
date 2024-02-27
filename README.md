@@ -7,12 +7,12 @@ This project implements two univariate time series classification algorithms usi
 The implemented algorithms aim to classify time series data into predefined classes using supervised learning techniques. The project consists of two main approaches:
 
 - **Deep Learning Model with 1-D Convolution**
-        In this approach, the time series data is windowed into fixed-size segments.
+      --  In this approach, the time series data is windowed into fixed-size segments.
         Each window is then fed into a deep learning model with 1-D convolution layers for training and testing.
         The model learns to classify each window into predefined classes based on the features extracted from the time series data.
 
 - **Feature Extraction with tsfresh and SelectKbest**
-        This approach involves splitting the time series data into fixed-size windows.
+      --  This approach involves splitting the time series data into fixed-size windows.
         Features are extracted from each window using the tsfresh feature extraction package.
         The SelectKbest feature selection algorithm is applied to identify the optimal subset of features that minimize validation loss.
         During the testing phase, the selected features are extracted from the test data and used to predict the class labels using a trained model.

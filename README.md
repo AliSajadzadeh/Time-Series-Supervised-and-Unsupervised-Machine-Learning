@@ -58,11 +58,3 @@ Dependencies
     Pandas
     scikit-learn
 
-Contributors
-
-    [Your Name]
-    [Additional Contributors]
-
-License
-
-[Include license information here]

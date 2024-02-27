@@ -53,7 +53,7 @@ The implemented algorithms aim to classify time series data into predefined clas
     Evaluate the trained models on test data to assess their classification accuracy.
     Analyze the results and refine the models as necessary to improve performance.
 
-- **Dependencies:**
+  ## Dependencies
 
     Python 3.x
   

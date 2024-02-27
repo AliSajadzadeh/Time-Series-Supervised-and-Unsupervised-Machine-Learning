@@ -21,13 +21,15 @@ The implemented algorithms aim to classify time series data into predefined clas
 
 ## Implementation Details
 
-  - **Deep Learning Mode*
+  - **Deep Learning Mode**
+    
     Implemented using TensorFlow and Keras.
     Architecture includes 1-D convolutional layers followed by dense layers for classification.
     Data preprocessing involves windowing the time series data into segments of fixed size.
     Model training is performed using labeled data, and testing evaluates the model's performance on unseen data.
 
   - **Feature extraction model**
+    
     Utilizes the tsfresh package for automated feature extraction from time series data. It extracts hundreds of feature including statistical, frequency and distributional features.
     Features are extracted from each windowed segment of the time series.
     SelectKbest feature selection algorithm is applied to select the most relevant feature. The optimal window size for windowing is based on achieving the lowest validation loss.

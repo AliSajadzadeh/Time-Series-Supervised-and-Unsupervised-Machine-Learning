@@ -6,23 +6,31 @@ This project implements two univariate time series classification algorithms usi
 
 The implemented algorithms aim to classify time series data into predefined classes using supervised learning techniques. The project consists of two main approaches:
 
-- **Deep Learning Model with 1-D Convolution**:
+- **Deep Learning Model with 1-D Convolution*
 
   In this approach, the time series data is windowed into fixed-size segments.
   Each window is then fed into a deep learning model with 1-D convolution layers for training and testing.
-  The model learns to classify each window into predefined classes based on the features extracted from the time series data.
-
-- **Feature Extraction with tsfresh and SelectKbest**:
+  The model learns to classify each window into predefined classes.
   
-        This approach involves splitting the time series data into fixed-size windows.
-        Features are extracted from each window using the tsfresh feature extraction package.
-        The SelectKbest feature selection algorithm is applied to identify the optimal subset of features that minimize validation loss.
-        During the testing phase, the selected features are extracted from the test data and used to predict the class labels using a trained model.
+- **Model based on feature extraction and featre selection**
+  
+  This approach involves splitting the time series data into fixed-size windows.
+  Features are extracted from each window using the tsfresh feature extraction package.
+  The SelectKbest feature selection algorithm is applied to identify the optimal subset of features that minimize validation loss.
+  During the testing phase, the selected features from training phase are extracted from the test data and used to predict the class labels using a trained model.
 
-## Objective
-The objective of the project is to gain a comprehensive understanding of deep learning layers and their functionality by implementing them from scratch. 
-This hands-on approach helps us reinforce our understanding of the concepts learned in the deep learning course.
+## Implementation Details
 
+    - **Deep Learning Mode*
+        Implemented using TensorFlow and Keras.
+        Architecture includes 1-D convolutional layers followed by dense layers for classification.
+        Data preprocessing involves windowing the time series data into segments of fixed size.
+        Model training is performed using labeled data, and testing evaluates the model's performance on unseen data.
+
+    - **Feature extraction model**
+        Utilizes the tsfresh package for automated feature extraction from time series data. It extracts hundreds of feature including statistical, frequency and distributional features.
+        Features are extracted from each windowed segment of the time series.
+        SelectKbest feature selection algorithm is applied to select the most relevant feature. The optimal window size for windowing is based on achieving the lowest validation loss.
 
 ## Implemented Deep Learning Layers
 This project includes the following deep learning layers:

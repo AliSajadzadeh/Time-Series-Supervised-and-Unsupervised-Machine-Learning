@@ -18,5 +18,9 @@ dependencies:
   - pytest-pylint
   - pytest-cache
   - pytest-cov
-  # Project
-  - param
+  - numpy
+  - tensorflow
+  - keras
+  - tsfresh
+  - pandas
+  - scikit-learn
